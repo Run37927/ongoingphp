@@ -11,5 +11,7 @@ echo 'int size = ' . PHP_INT_SIZE . '<br>';
 
 $x = 0x2A;
 $y = 055;
+$z = 0b111;
 echo $x . '<br>';
 echo $y . '<br>';
+echo $z . '<br>';
