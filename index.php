@@ -17,3 +17,5 @@ echo $paid  . '<br>';
 echo $score . '<br>';
 echo $price . '<br>';
 echo $greeting . '<br>';
+
+echo gettype($paid);
