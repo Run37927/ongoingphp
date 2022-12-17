@@ -1,7 +1,8 @@
 <?php
 
-// echo PHP_VERSION; //predefined magic constants
+// variable variables
+$foo = 'bar';
 
-echo __LINE__;
+$$foo = 'baz';
 
-echo __FILE__;
+echo $foo, $$foo;
