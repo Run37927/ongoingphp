@@ -4,4 +4,4 @@ $x = null;
 
 echo $x; // nothing
 
-var_dump($x);
+var_dump(is_null($x));
