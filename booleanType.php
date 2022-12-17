@@ -2,7 +2,7 @@
 
 use Hamcrest\Number\IsCloseTo;
 
-$isComplete = true;
+$isComplete = 'false';
 
 // integer 0 = false
 // integer -0 = false
