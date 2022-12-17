@@ -13,9 +13,7 @@ $isComplete = 'false';
 // [] = false
 // null = false
 
-var_dump(is_bool($isComplete));
 
-echo '<br>' . 'function starts' . '<br>';
 if ($isComplete) {
     echo 'success';
 } else {
