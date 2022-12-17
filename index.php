@@ -12,7 +12,13 @@
 
 // echo STATUS_PAID;
 
-if (1) {
-    // const FOO = 'bar'; doesnt work
-    define('STATUS_PAID', 9);
-}
+// if (1) {
+//     // const FOO = 'bar'; doesnt work
+//     define('STATUS_PAID', 9);
+// }
+
+
+$paid = 'PAID';
+define('STATUS_' . $paid, $paid);
+
+echo STATUS_PAID;
