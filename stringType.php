@@ -7,4 +7,4 @@ $name = $first . ' ' . $last;
 
 echo $name . '<br>';
 
-echo $name[1];
+echo $name[-1];
