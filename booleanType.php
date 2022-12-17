@@ -2,7 +2,7 @@
 
 use Hamcrest\Number\IsCloseTo;
 
-$isComplete = 5;
+$isComplete = true;
 
 // integer 0 = false
 // integer -0 = false
@@ -13,7 +13,9 @@ $isComplete = 5;
 // [] = false
 // null = false
 
+var_dump(is_bool($isComplete));
 
+echo '<br>' . 'function starts' . '<br>';
 if ($isComplete) {
     echo 'success';
 } else {
