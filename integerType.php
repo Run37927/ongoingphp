@@ -9,9 +9,10 @@ echo 'int size = ' . PHP_INT_SIZE . '<br>';
 # min int = -9223372036854775808
 # int size = 8
 
-$x = 0x2A;
-$y = 055;
-$z = 0b111;
-echo $x . '<br>';
-echo $y . '<br>';
-echo $z . '<br>';
+$x = 0x2A; // hex
+$y = 055;  // oct
+$z = 0b111; // binary
+
+echo $x . '<br>'; // 42
+echo $y . '<br>'; // 45
+echo $z . '<br>'; // 7
