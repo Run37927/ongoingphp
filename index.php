@@ -18,4 +18,4 @@ echo $score . '<br>';
 echo $price . '<br>';
 echo $greeting . '<br>';
 
-echo gettype($paid);
+var_dump($completed); // prints everything it knows about the expression you give it to
