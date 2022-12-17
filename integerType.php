@@ -16,3 +16,6 @@ $z = 0b111; // binary
 echo $x . '<br>'; // 42
 echo $y . '<br>'; // 45
 echo $z . '<br>'; // 7
+
+$a = (int) '87dasdsa';
+var_dump($a); // 87
