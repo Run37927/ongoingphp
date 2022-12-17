@@ -11,4 +11,10 @@ var_dump(isset($programmingLanguages[1])); // bool(true)
 
 $programmingLanguages[1] = 'C';
 
-echo $programmingLanguages[1];
+echo $programmingLanguages[1]; // C
+
+echo '<br>';
+
+echo '<pre>';
+print_r($programmingLanguages); //Array ( [0] => php [1] => C [2] => python )
+echo '</pre>';
