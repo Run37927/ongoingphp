@@ -4,4 +4,4 @@
 
 define('STATUS_PAID', 'paid');
 
-echo STATUS_PAID;
+echo defined('STATUS_PAID');
