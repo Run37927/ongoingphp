@@ -1,6 +1,6 @@
 <?php
 
 $first = 'will';
-$last = '$first smith';
+$last = "$first smith";
 
 echo $last;
