@@ -13,6 +13,6 @@
 // echo STATUS_PAID;
 
 if (1) {
-    const FOO = 'bar';
+    // const FOO = 'bar'; doesnt work
     define('STATUS_PAID', 9);
 }
