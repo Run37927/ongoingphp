@@ -1,8 +1,17 @@
 <?php
 
-// variable variables
-$foo = 'bar';
+#4 scalar types
+    # bool
+    # int
+    # float
+    # string
 
-$$foo = 'baz';
+$completed = true;
+$score = 88;
+$price = 0.99;
+$greeting = 'hello john';
 
-echo "$foo, ${$foo}";
+echo $completed . '<br>';
+echo $score . '<br>';
+echo $price . '<br>';
+echo $greeting . '<br>';
