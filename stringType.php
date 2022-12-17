@@ -1,6 +1,8 @@
 <?php
 
 $first = 'will';
-$last = "$first smith";
+$last = 'smith';
 
-echo $last;
+$name = $first . ' ' . $last;
+
+echo $name . '<br>';
