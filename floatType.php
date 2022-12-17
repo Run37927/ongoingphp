@@ -36,3 +36,6 @@ echo INF; // INF
 echo '<br>';
 $z = 5;
 var_dump((float) $z);
+
+$u = 'asdasd';
+var_dump((float) $u);
