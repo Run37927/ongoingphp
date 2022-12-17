@@ -1,10 +1,13 @@
 <?php
 
-function sum(int $x, int $y)
+declare(strict_types=1);
+
+function sum(float $x, float $y)
 {
-    var_dump($x, $y);
-    echo '<br>';
     return $x + $y;
 }
 
-echo sum(2.5, '3');
+$sum = sum(2, 3);
+echo $sum . '<br>';
+
+var_dump($sum);
