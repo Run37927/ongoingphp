@@ -10,5 +10,6 @@ echo 'int size = ' . PHP_INT_SIZE . '<br>';
 # int size = 8
 
 $x = 0x2A;
-
-echo $x;
+$y = 055;
+echo $x . '<br>';
+echo $y . '<br>';
