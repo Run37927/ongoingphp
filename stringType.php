@@ -13,10 +13,25 @@ $name[1] = 'a';
 
 echo $name . '<br>';
 
+
+$x = 'hey';
+$y = 'whatsup';
 // Heredoc
 $text = <<<TEXT
-line 1
-line 2
+line 1 $x
+line 2 $y
+line 3
+TEXT;
+
+echo nl2br($text);
+echo '<br>';
+echo '<br>';
+
+
+//Nowdoc
+$text = <<<'TEXT'
+line 1 $x
+line 2 $y
 line 3
 TEXT;
 
