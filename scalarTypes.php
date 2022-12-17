@@ -19,3 +19,4 @@ echo $price . '<br>';
 echo $greeting . '<br>';
 
 var_dump($price); // prints everything it knows about the expression you give it to
+
