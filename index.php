@@ -13,10 +13,20 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel illo, maxime libero accusantium quae exercitationem facilis optio temporibus laboriosam enim necessitatibus magni, obcaecati ab? At, eaque! Dicta libero ex rerum.</p>
 
     <?php
-            $x = 10;
-            $y = 45;
+        // comment 1
+        # comment 2
 
-            echo '<h2>' . $x . ', ' , $y . '</h2>';
+        /*
+        multi line comment
+        */
+
+        /**
+         * document comment, kinda like javadocs
+         */
+        $x = 10;
+        $y = 45;
+
+        echo '<h2>' . $x . ', ' , $y . '</h2>';
     ?>
 </body>
 </html>
