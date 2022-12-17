@@ -8,6 +8,11 @@
 
 
 
-const STATUS_PAID = 'paid'; // compile time
+// const STATUS_PAID = 'paid'; // compile time
 
-echo STATUS_PAID;
+// echo STATUS_PAID;
+
+if (1) {
+    const FOO = 'bar';
+    define('STATUS_PAID', 9);
+}
