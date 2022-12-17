@@ -2,4 +2,6 @@
 
 $programmingLanguages = ['php', 'java', 'python'];
 
-echo $programmingLanguages[1];
+echo $programmingLanguages[1]; // java
+
+echo $programmingLanguages[-1]; // undefined 
