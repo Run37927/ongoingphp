@@ -21,6 +21,10 @@ $text = <<<TEXT
 line 1 $x
 line 2 $y
 line 3
+<div>
+    <p> whats going on? </p>
+    <p> hello html </p>
+</div>
 TEXT;
 
 echo nl2br($text);
