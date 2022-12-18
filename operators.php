@@ -51,3 +51,15 @@ echo '<br>';
 var_dump($num1 != $num2); // false
 echo '<br>';
 var_dump($num1 !== $num2); // true
+echo '<br>';
+var_dump($num1 <> $num2); // false since it's still loose comparison
+echo '<br>';
+var_dump($num1 < $num2); // false
+echo '<br>';
+var_dump($num1 > $num2); // false
+echo '<br>';
+var_dump($num1 <= $num2); // true
+echo '<br>';
+var_dump($num1 >= $num2); // true
+echo '<br>';
+var_dump($num1 <=> $num2); // 0 if two are equal, -1 if num1 < num2, 1 if num1> num2
