@@ -81,3 +81,22 @@ Array
 )
 
 */
+
+
+echo array_pop($arr); // pops the last element
+
+echo '<pre>';
+print_r($arr);
+echo '</pre>';
+
+/*
+
+Array
+(
+    [0] => a
+    [1] => b
+    [50] => c
+    [51] => d
+)
+
+*/
