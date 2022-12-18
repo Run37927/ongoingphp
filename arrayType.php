@@ -57,6 +57,6 @@ print_r($programmingLanguages);
 echo '</pre>';
 
 
-echo $programmingLanguages['php']['website'];
+echo $programmingLanguages['php']['website']; //www.php.net
 echo '<br>';
-echo $programmingLanguages['php']['versions'][0]['releaseDate'];
+echo $programmingLanguages['php']['versions'][0]['releaseDate']; //Nov 26, 2020
