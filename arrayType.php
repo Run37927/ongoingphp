@@ -90,7 +90,6 @@ print_r($arr);
 echo '</pre>';
 
 /*
-
 Array
 (
     [0] => a
@@ -98,5 +97,20 @@ Array
     [50] => c
     [51] => d
 )
+*/
 
+
+echo array_shift($arr); // pops the first element
+
+echo '<pre>';
+print_r($arr);
+echo '</pre>';
+
+/*
+Array
+(
+    [0] => b
+    [1] => c
+    [2] => d
+)
 */
