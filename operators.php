@@ -109,5 +109,10 @@ echo ++$demo_incre_string . '<br>'; //abd and this doesn't make sense
 echo '<br>' . '========logical operators=======' . '<br>';
 $demo_bool_one = true;
 $demo_bool_two = false;
+$bizarre_one = $demo_bool_one and $demo_bool_two; // assignment has higher precedence than and, so true, and the rest gets disgarded
+
 
 var_dump($demo_bool_one && $demo_bool_two); // false as expected
+var_dump($demo_bool_one || $demo_bool_two); // true as expected, short-circuited
+var_dump(!$demo_bool_one && $demo_bool_two); // negation, false as expected
+var_dump($bizarre_one); // true
