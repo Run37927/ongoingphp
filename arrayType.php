@@ -148,3 +148,10 @@ UNSET WILL NOT RE-INDEX ELEMENTS
 */
 
 
+$x = 5;
+var_dump((array) $x); // will cast it to be the first element in the array
+
+echo '<br>';
+
+$y = null;
+var_dump((array) $y); // will cast it to be an empty array
