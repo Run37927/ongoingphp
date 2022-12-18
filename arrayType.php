@@ -34,12 +34,21 @@ echo '</pre>';
 
 // dictionary  or associative array
 $programmingLanguages = [
-    'php' => '8.0',
-    'python' => '3.9'
+    'php' => [
+        'creator' => 'Rasmus Lerdorf',
+        'extension' => '.php',
+        'website' => 'www.php.net',
+        'isOpenSource' => true,
+    ],
+    'python' => [
+        'creator' => 'Guido Van Rossum',
+        'extension' => '.py',
+        'website' => 'www.python.org',
+        'isOpenSource' => true,
+    ],
 ];
 
 echo '<pre>';
 print_r($programmingLanguages);
 echo '</pre>';
 
-echo $programmingLanguages['php']; // access value via key
