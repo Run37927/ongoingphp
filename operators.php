@@ -116,3 +116,37 @@ var_dump($demo_bool_one && $demo_bool_two); // false as expected
 var_dump($demo_bool_one || $demo_bool_two); // true as expected, short-circuited
 var_dump(!$demo_bool_one && $demo_bool_two); // negation, false as expected
 var_dump($bizarre_one); // true
+echo '<br>';
+// && has higher precedence than ||
+
+
+#================bitwise operators=======================
+echo '<br>' . '========bitwise operators=======' . '<br>';
+$demo_bit_one = 6;
+$demo_bit_two = 3;
+
+# 110
+# 011 &
+#-----
+# 010 -> which is 2
+echo $demo_bit_one & $demo_bit_two;echo '<br>';
+
+# 110
+# 011 |
+#-----
+# 111 -> which is 7
+echo $demo_bit_one | $demo_bit_two;echo '<br>';
+
+# 110
+# 011 ^ XOR
+#-----
+# 101 -> which is 5
+echo $demo_bit_one ^ $demo_bit_two;echo '<br>';
+
+# 110 -> turns into 001
+
+# 001
+# 011 &
+#-----
+# 001 -> which is 1
+echo ~$demo_bit_one & $demo_bit_two;echo '<br>';
