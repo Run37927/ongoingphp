@@ -24,3 +24,30 @@ var_dump($p, $q);echo '<br>';
 
 $p = ($q = 10) + 5;
 var_dump($p, $q);echo '<br>'; // int(15) int(10)
+
+$k = 5;
+$k += 10;
+echo $k; // 15
+
+#================string operators=======================
+echo '<br>' . '========string operators=======' . '<br>';
+$hello = 'hello';
+$hello = $hello . ' world';
+echo $hello;
+
+#or
+echo '<br>';
+$hello .= ' again';
+echo $hello;
+
+#================comparison operators=======================
+echo '<br>' . '========comparison operators=======' . '<br>';
+$num1 = 5;
+$num2 = '5';
+var_dump($num1 == $num2);
+echo '<br>';
+var_dump($num1 === $num2); // strict comparison (including datatype)
+echo '<br>';
+var_dump($num1 != $num2); // false
+echo '<br>';
+var_dump($num1 !== $num2); // true
