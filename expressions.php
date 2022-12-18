@@ -9,5 +9,3 @@ $y = $x; // an expression
 $z = $x === $y; // an expression
 
 $z = sum($x, $y); // an expression
-
-
