@@ -60,3 +60,24 @@ echo '</pre>';
 echo $programmingLanguages['php']['website']; //www.php.net
 echo '<br>';
 echo $programmingLanguages['php']['versions'][0]['releaseDate']; //Nov 26, 2020
+
+
+$arr = ['a', 'b', 50=> 'c', 'd', 'e'];
+echo '<pre>';
+print_r($arr);
+echo '</pre>';
+/* 
+because 50 is the biggest key here, everything after that will start from 50
+
+output:
+
+Array
+(
+    [0] => a
+    [1] => b
+    [50] => c
+    [51] => d
+    [52] => e
+)
+
+*/
