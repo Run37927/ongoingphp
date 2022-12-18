@@ -62,7 +62,7 @@ echo '<br>';
 echo $programmingLanguages['php']['versions'][0]['releaseDate']; //Nov 26, 2020
 
 
-$arr = ['a', 'b', 50=> 'c', 'd', 'e'];
+$arr = ['a', 'b', 50 => 'c', 'd', 'e'];
 echo '<pre>';
 print_r($arr);
 echo '</pre>';
@@ -115,7 +115,7 @@ Array
 )
 */
 
-unset($arr[0]); // destory certain element
+unset($arr[0]); // destory certain element (will not re-index elements)
 echo '<pre>';
 print_r($arr);
 echo '</pre>';
@@ -127,4 +127,24 @@ Array
     [2] => d
 )
 */
+
+
+// most bizarre
+$another_arr = [1, 2, 3];
+unset($another_arr[0], $another_arr[1], $another_arr[2]); // destroy all elements one by one
+$another_arr[] = 1; // add a new element to the array
+
+echo '<pre>';
+print_r($another_arr);
+echo '</pre>';
+
+/*
+Array
+(
+    [3] => 1
+)
+
+UNSET WILL NOT RE-INDEX ELEMENTS
+*/
+
 
