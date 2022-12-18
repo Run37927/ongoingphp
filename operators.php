@@ -150,3 +150,10 @@ echo $demo_bit_one ^ $demo_bit_two;echo '<br>';
 #-----
 # 001 -> which is 1
 echo ~$demo_bit_one & $demo_bit_two;echo '<br>';
+
+# 0000 0110
+# 0000 1100 shift once
+# 0001 1000 shift twice
+# 0011 0000 shift thrice
+# 2^4 + 2^5 = 16 + 32 = 48
+echo $demo_bit_one << $demo_bit_two;echo '<br>';
