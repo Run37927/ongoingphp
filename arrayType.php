@@ -114,3 +114,17 @@ Array
     [2] => d
 )
 */
+
+unset($arr[0]); // destory certain element
+echo '<pre>';
+print_r($arr);
+echo '</pre>';
+
+/*
+Array
+(
+    [1] => c
+    [2] => d
+)
+*/
+
