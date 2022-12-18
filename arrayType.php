@@ -55,3 +55,8 @@ $programmingLanguages = [
 echo '<pre>';
 print_r($programmingLanguages);
 echo '</pre>';
+
+
+echo $programmingLanguages['php']['website'];
+echo '<br>';
+echo $programmingLanguages['php']['versions'][0]['releaseDate'];
