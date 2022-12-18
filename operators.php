@@ -70,15 +70,20 @@ $var1 = 'Hello There';
 $var2 = strpos($var1, 'H');
 var_dump($var2); echo '<br>'; // int(0)
 
-if($y == false) {
+if($var2 == false) {
     echo 'H not found';
 } else {
     echo 'H found at index ' . $var2;
 }
 
 echo '<br>';
-$result = $y === false ? 'H not found' : 'H found at index ' . $var2;
+$result = $var2 === false ? 'H not found' : 'H found at index ' . $var2;
+echo $result;echo '<br>';
 
-echo $result;
+$f = null;
+$g = $f ?? 'varnished';
+var_dump($g); // g will be equal to varnished only if f equals to null, otherwise g will equal to whatever f is
+
+
 #================error control operators=======================
 echo '<br>' . '========error control operators=======' . '<br>';
