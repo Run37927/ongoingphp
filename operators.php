@@ -103,4 +103,11 @@ $demo_incre_null = null;
 echo ++$demo_incre_null . '<br>'; // 1
 
 $demo_incre_string = 'abc';
-echo ++$demo_incre_string . '<br>'; //abd
+echo ++$demo_incre_string . '<br>'; //abd and this doesn't make sense
+
+#================logical operators=======================
+echo '<br>' . '========logical operators=======' . '<br>';
+$demo_bool_one = true;
+$demo_bool_two = false;
+
+var_dump($demo_bool_one && $demo_bool_two); // false as expected
