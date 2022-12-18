@@ -87,3 +87,20 @@ var_dump($g); // g will be equal to varnished only if f equals to null, otherwis
 
 #================error control operators=======================
 echo '<br>' . '========error control operators=======' . '<br>';
+$file_var = @file('foo.txt');
+echo 'do not use @' . '<br>';
+// without the @ surrepressing tag, error will show. DO NOT RECOMMEND
+
+
+#================increment/decrement operators=======================
+echo '<br>' . '========increment/decrement operators=======' . '<br>';
+
+$demo_incre = 5;
+echo $demo_incre++ . '<br>';
+echo ++$demo_incre . '<br>';
+
+$demo_incre_null = null;
+echo ++$demo_incre_null . '<br>'; // 1
+
+$demo_incre_string = 'abc';
+echo ++$demo_incre_string . '<br>'; //abd
