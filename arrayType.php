@@ -39,6 +39,10 @@ $programmingLanguages = [
         'extension' => '.php',
         'website' => 'www.php.net',
         'isOpenSource' => true,
+        'versions' => [
+            ['version' => 8, 'releaseDate' => 'Nov 26, 2020'],
+            ['version' => 7.4, 'releaseDate' => 'Nov 28, 2019']
+        ]
     ],
     'python' => [
         'creator' => 'Guido Van Rossum',
@@ -51,4 +55,3 @@ $programmingLanguages = [
 echo '<pre>';
 print_r($programmingLanguages);
 echo '</pre>';
-
