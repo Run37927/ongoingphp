@@ -21,6 +21,10 @@ $i = 0;
 //     echo $i++ . ' ';
 // } while ($i <= 15);
 
-for ($i; $i < 5; $i++) {
-    echo $i . ' ';
+// for ($i; $i < 5; $i++) {
+//     echo $i . ' ';
+// }
+
+for ($i; $i < 5; print $i, $i++) {
+    // echo $i . ' ';
 }
