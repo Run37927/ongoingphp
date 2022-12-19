@@ -191,3 +191,10 @@ Array
     [4] => h
 )
 */
+
+$score = 95;
+if ($score >= 90) {
+    echo 'A';
+} else {
+    echo 'FAIL';
+}
