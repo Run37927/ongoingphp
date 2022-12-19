@@ -1,6 +1,9 @@
 <?php
 
 $i = 0;
-while ($i <= 5) {
+while (true) {
+    if ($i > 5) {
+        break;
+    }
     echo $i++ . '<br>';
 }
