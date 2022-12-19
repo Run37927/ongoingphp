@@ -9,10 +9,14 @@ $i = 0;
 // }
 
 
-while ($i <= 15):
-    if ($i % 2 == 0) {
-        $i++;
-        continue;
-    }
-    echo $i++ . '<br>';
-endwhile;
+// while ($i <= 15):
+//     if ($i % 2 == 0) {
+//         $i++;
+//         continue;
+//     }
+//     echo $i++ . '<br>';
+// endwhile;
+
+do {
+    echo $i++ . ' ';
+} while ($i <= 15);
