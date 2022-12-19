@@ -17,6 +17,10 @@ $i = 0;
 //     echo $i++ . '<br>';
 // endwhile;
 
-do {
-    echo $i++ . ' ';
-} while ($i <= 15);
+// do {
+//     echo $i++ . ' ';
+// } while ($i <= 15);
+
+for ($i; $i < 5; $i++) {
+    echo $i . ' ';
+}
