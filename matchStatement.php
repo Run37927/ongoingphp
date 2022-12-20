@@ -9,6 +9,7 @@ $paymentStatusDisplay = match ($paymentStatus) {
     1 =>  'paid',
     2,3 =>  'payment declined', // 2 or 3 will print payment declined
     0 =>  'pending payment',
+    default => 'unknown'
 };
 
 echo $paymentStatusDisplay;
