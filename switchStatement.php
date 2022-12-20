@@ -1,12 +1,13 @@
 <?php
 
-$paymentStatus = 'paid';
+$paymentStatus = 'rejected';
 
 switch($paymentStatus) {
     case 'paid':
         echo 'paid';
         break;
     
+    case 'rejected':
     case 'declined':
         echo 'payment declined';
         break;
