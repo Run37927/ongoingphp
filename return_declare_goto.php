@@ -35,4 +35,4 @@ function sum(int $x, int $y) {
     return $x + $y;
 }
 
-echo sum('5', 10); //doesn't work
+// echo sum('5', 10); //doesn't work
