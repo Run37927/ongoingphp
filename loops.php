@@ -47,3 +47,5 @@ foreach($programming_languages as $language) {
 foreach($programming_languages as $key => $language) {
     echo $key . ': ' . $language . '<br>';
 }
+
+echo $language; // doesn't get destroyed after the loop
