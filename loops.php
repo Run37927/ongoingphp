@@ -38,14 +38,25 @@ $i = 0;
 //     echo $text[$i] . '<br>';
 // }
 
-$programming_languages = ['php', 'java', 'c++', 'go', 'rust'];
+// $programming_languages = ['php', 'java', 'c++', 'go', 'rust'];
 
-foreach($programming_languages as $language) {
-    echo $language . '<br>';
+// foreach($programming_languages as $language) {
+//     echo $language . '<br>';
+// }
+
+// foreach($programming_languages as $key => $language) {
+//     echo $key . ': ' . $language . '<br>';
+// }
+
+// echo $language; // doesn't get destroyed after the loop
+
+
+$user = [
+    'name' => 'Gio',
+    'email' => 'gio@yahoo.com',
+    'skills' => ['php', 'graphql', 'react'],
+];
+
+foreach($user as $key => $value) {
+    echo $key . ': ' . json_encode($value) . '<br>';
 }
-
-foreach($programming_languages as $key => $language) {
-    echo $key . ': ' . $language . '<br>';
-}
-
-echo $language; // doesn't get destroyed after the loop
