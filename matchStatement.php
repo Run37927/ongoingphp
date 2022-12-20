@@ -3,8 +3,12 @@
 
 $paymentStatus = 1;
 
-match($paymentStatus) {
-    1 => print 'paid',
-    2 => print 'payment declined',
-    3 => print 'pending payment',
+
+// match is a expression, thus evaluates to a value
+$paymentStatusDisplay = match ($paymentStatus) {
+    1 =>  'paid',
+    2 =>  'payment declined',
+    3 =>  'pending payment',
 };
+
+echo $paymentStatusDisplay;
