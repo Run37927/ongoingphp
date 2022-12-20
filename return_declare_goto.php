@@ -36,3 +36,4 @@ function sum(int $x, int $y) {
 }
 
 // echo sum('5', 10); //doesn't work
+
