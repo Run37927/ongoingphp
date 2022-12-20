@@ -57,6 +57,20 @@ $user = [
     'skills' => ['php', 'graphql', 'react'],
 ];
 
+// foreach($user as $key => $value) {
+//     echo $key . ': ' . json_encode($value) . '<br>';
+// }
+
 foreach($user as $key => $value) {
-    echo $key . ': ' . json_encode($value) . '<br>';
+    echo $key . ': ';
+
+    if (is_array($value)) {
+        foreach($value as $skill) {
+            echo $skill . ', ';
+        }
+    } else {
+        echo $value;
+    }
+
+    echo '<br>';
 }
