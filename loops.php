@@ -43,3 +43,7 @@ $programming_languages = ['php', 'java', 'c++', 'go', 'rust'];
 foreach($programming_languages as $language) {
     echo $language . '<br>';
 }
+
+foreach($programming_languages as $key => $language) {
+    echo $key . ': ' . $language . '<br>';
+}
