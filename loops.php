@@ -33,7 +33,13 @@ $i = 0;
 // }
 
 
-$text = 'jello world';
-for ($i; $i < strlen($text); $i++) {
-    echo $text[$i] . '<br>';
+// $text = 'jello world';
+// for ($i; $i < strlen($text); $i++) {
+//     echo $text[$i] . '<br>';
+// }
+
+$programming_languages = ['php', 'java', 'c++', 'go', 'rust'];
+
+foreach($programming_languages as $language) {
+    echo $language . '<br>';
 }
