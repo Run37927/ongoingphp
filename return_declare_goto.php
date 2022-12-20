@@ -1,13 +1,29 @@
 <?php
 
-function sum(int $x, int $y) {
-    return $x + $y;
+// function sum(int $x, int $y) {
+//     return $x + $y;
+// }
+
+// $z = sum(5, 10);
+
+// echo $z;
+
+// return;
+
+// echo 'hello world'; // won't be evaluated
+
+
+
+function onTick() {
+    echo 'tick <br>';
 }
 
-$z = sum(5, 10);
+register_tick_function('onTick');
 
-echo $z;
+declare(ticks=3);
 
-return;
-
-echo 'hello world'; // won't be evaluated
+$i = 0;
+$length = 10;
+while ($i < $length) {
+    echo $i++ . '<br>';
+}
