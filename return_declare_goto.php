@@ -14,16 +14,25 @@
 
 
 
-function onTick() {
-    echo 'tick <br>';
+// function onTick() {
+//     echo 'tick <br>';
+// }
+
+// register_tick_function('onTick');
+
+// declare(ticks=3);
+
+// $i = 0;
+// $length = 10;
+// while ($i < $length) {
+//     echo $i++ . '<br>';
+// }
+
+
+declare(strict_types=1);
+
+function sum(int $x, int $y) {
+    return $x + $y;
 }
 
-register_tick_function('onTick');
-
-declare(ticks=3);
-
-$i = 0;
-$length = 10;
-while ($i < $length) {
-    echo $i++ . '<br>';
-}
+echo sum('5', 10); //doesn't work
