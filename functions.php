@@ -7,13 +7,19 @@
 // echo foo();
 
 
-foo();
-bar();
+// foo();
+// bar();
 
 
-function foo() {
-    echo 'foo';
-    function bar() {
-        echo 'bar';
-    }
+// function foo() {
+//     echo 'foo';
+//     function bar() {
+//         echo 'bar';
+//     }
+// }
+
+function foo(): float {
+    return 1;
 }
+
+var_dump(foo());
