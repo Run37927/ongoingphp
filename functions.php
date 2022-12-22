@@ -18,8 +18,8 @@
 //     }
 // }
 
-function foo(): float {
-    return 1;
+function foo(): void {
+    return;
 }
 
 var_dump(foo());
