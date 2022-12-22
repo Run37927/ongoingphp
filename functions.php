@@ -45,12 +45,11 @@ declare(strict_types=1);
 
 # variable length args
 function sum(...$numbers): int|float {
-    $sum = 0;
-    foreach($numbers as $number) {
-        $sum += $number;
-    }
-
-    return $sum;
+    // $sum = 0;
+    // foreach($numbers as $number) {
+    //     $sum += $number;
+    // }
+    return array_sum($numbers);
 }
 
 
