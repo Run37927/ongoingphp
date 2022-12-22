@@ -25,8 +25,17 @@
 
 // var_dump(foo());
 
-function mixType(): mixed {
-    return [1.5];
+// function mixType(): mixed {
+//     return [1.5];
+// }
+
+// var_dump(mixType());
+
+
+function foo($x, $y) {
+    return $x * $y;
 }
 
-var_dump(mixType());
+$result = foo(5, 10);
+
+echo $result;
