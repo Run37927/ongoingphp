@@ -18,8 +18,9 @@
 //     }
 // }
 
-function foo(): void {
-    return;
+
+function foo(): int|float|array {
+    return [1.5];
 }
 
 var_dump(foo());
