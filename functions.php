@@ -44,7 +44,8 @@ declare(strict_types=1);
 
 
 # variable length args
-function sum(...$numbers): int|float {
+function sum(...$numbers): int|float
+{
     // $sum = 0;
     // foreach($numbers as $number) {
     //     $sum += $number;
@@ -53,4 +54,6 @@ function sum(...$numbers): int|float {
 }
 
 
-echo sum(1,2,3,4,5,66,77.7) . '<br>';
+// echo sum(1, 2, 3, 4, 5, 66, 77.7) . '<br>';
+$sample = [1, 2, 3, 4, 5, 66, 77.7];
+echo sum(...$sample);
