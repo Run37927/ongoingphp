@@ -34,12 +34,24 @@
 
 declare(strict_types=1);
 
-function foo(int|float $x, int|float $y) {
-    return $x * $y;
+// function foo(int|float $x, int|float $y) {
+//     return $x * $y;
+// }
+
+// $result = foo(5, 10.8);
+
+// echo $result; //54 ???
+
+
+# variable length args
+function sum(...$numbers): int|float {
+    $sum = 0;
+    foreach($numbers as $number) {
+        $sum += $number;
+    }
+
+    return $sum;
 }
 
-$result = foo(5, 10.8);
 
-echo $result; //54 ???
-
-
+echo sum(1,2,3,4,5,66,77.7) . '<br>';
