@@ -59,15 +59,29 @@ declare(strict_types=1);
 // echo sum(...$sample);
 
 
-function foo(int $x, int $y): int {
-    if ($x % $y ===0) {
-        return $x / $y;
-    }
+// function foo(int $x, int $y): int {
+//     if ($x % $y === 0) {
+//         return $x / $y;
+//     }
 
-    return $x;
+//     return $x;
+// }
+
+// $x = 6;
+// $y = 3;
+
+// echo foo(y: $y, x: $x); // using named args, order doesn't matter any more
+
+function sum(...$numbers): int|float
+{
+    return array_sum($numbers);
 }
 
-$x = 6;
-$y = 3;
+$x = 'sum';
+// echo $x(1, 2, 3, 4); //php look for x, matches function name sum
 
-echo foo(y: $y, x: $x);
+if (is_callable($x)) {
+    echo $x(1, 2, 3, 4);
+} else {
+    echo 'not callable';
+}
