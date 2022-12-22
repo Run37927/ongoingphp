@@ -109,12 +109,21 @@ declare(strict_types=1);
 
 
 # still mapping
-$sum = function (callable $callback, int ...$numbers): int {
-    return $callback(array_sum($numbers));
-}; // still anonymous
+// $sum = function (callable $callback, int ...$numbers): int {
+//     return $callback(array_sum($numbers));
+// }; // still anonymous
 
-echo $sum('foo', 1, 2, 3, 4); // call function sum, pass arguments
+// echo $sum('foo', 1, 2, 3, 4); // call function sum, pass arguments
 
-function foo($element) {
-    return $element * 2;
-}
+// function foo($element) {
+//     return $element * 2;
+// }
+
+
+$array = [1, 2, 3, 4];
+
+$array2 = array_map(fn($number) => $number * $number, $array);
+
+echo '<pre>';
+print_r($array2);
+echo '</pre>';
