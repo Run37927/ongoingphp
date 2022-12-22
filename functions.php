@@ -44,16 +44,30 @@ declare(strict_types=1);
 
 
 # variable length args
-function sum(...$numbers): int|float
-{
-    // $sum = 0;
-    // foreach($numbers as $number) {
-    //     $sum += $number;
-    // }
-    return array_sum($numbers);
+// function sum(...$numbers): int|float
+// {
+//     // $sum = 0;
+//     // foreach($numbers as $number) {
+//     //     $sum += $number;
+//     // }
+//     return array_sum($numbers);
+// }
+
+
+// // echo sum(1, 2, 3, 4, 5, 66, 77.7) . '<br>';
+// $sample = [1, 2, 3, 4, 5, 66, 77.7];
+// echo sum(...$sample);
+
+
+function foo(int $x, int $y): int {
+    if ($x % $y ===0) {
+        return $x / $y;
+    }
+
+    return $x;
 }
 
+$x = 6;
+$y = 3;
 
-// echo sum(1, 2, 3, 4, 5, 66, 77.7) . '<br>';
-$sample = [1, 2, 3, 4, 5, 66, 77.7];
-echo sum(...$sample);
+echo foo(y: $y, x: $x);
