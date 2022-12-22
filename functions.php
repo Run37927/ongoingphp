@@ -19,8 +19,14 @@
 // }
 
 
-function foo(): int|float|array {
+// function foo(): int|float|array {
+//     return [1.5];
+// }
+
+// var_dump(foo());
+
+function mixType(): mixed {
     return [1.5];
 }
 
-var_dump(foo());
+var_dump(mixType());
