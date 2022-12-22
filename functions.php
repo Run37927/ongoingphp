@@ -1,7 +1,19 @@
 <?php
 
-function foo() {
-    return 'hellow world';
-}
+// function foo() {
+//     return 'hellow world';
+// }
 
-echo foo();
+// echo foo();
+
+
+foo();
+bar();
+
+
+function foo() {
+    echo 'foo';
+    function bar() {
+        echo 'bar';
+    }
+}
