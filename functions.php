@@ -32,7 +32,7 @@
 // var_dump(mixType());
 
 
-function foo($x, $y) {
+function foo(int $x, int $y) {
     return $x * $y;
 }
 
