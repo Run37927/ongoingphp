@@ -72,16 +72,24 @@ declare(strict_types=1);
 
 // echo foo(y: $y, x: $x); // using named args, order doesn't matter any more
 
-function sum(...$numbers): int|float
-{
+// function sum(...$numbers): int|float
+// {
+//     return array_sum($numbers);
+// }
+
+// $x = 'sum';
+// // echo $x(1, 2, 3, 4); //php look for x, matches function name sum
+
+// if (is_callable($x)) {
+//     echo $x(1, 2, 3, 4);
+// } else {
+//     echo 'not callable';
+// }
+
+
+# anonymous function
+$sum = function (int|float ...$numbers): int|float {
     return array_sum($numbers);
-}
+}; // need the semicolon for anonymous function!
 
-$x = 'sum';
-// echo $x(1, 2, 3, 4); //php look for x, matches function name sum
-
-if (is_callable($x)) {
-    echo $x(1, 2, 3, 4);
-} else {
-    echo 'not callable';
-}
+echo $sum(1, 2, 3, 4);
