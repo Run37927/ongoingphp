@@ -88,8 +88,21 @@ declare(strict_types=1);
 
 
 # anonymous function
-$sum = function (int|float ...$numbers): int|float {
-    return array_sum($numbers);
-}; // need the semicolon for anonymous function!
+// $sum = function (int|float ...$numbers): int|float {
+//     return array_sum($numbers);
+// }; // need the semicolon for anonymous function!
 
-echo $sum(1, 2, 3, 4);
+// echo $sum(1, 2, 3, 4);
+
+
+$array = [1, 2, 3, 4];
+
+$array2 = array_map(function ($element) {
+    return $element * 2;
+}, $array);
+
+echo '<pre>';
+print_r($array);
+
+print_r($array2);
+echo '</pre>';
