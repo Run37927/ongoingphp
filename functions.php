@@ -32,10 +32,14 @@
 // var_dump(mixType());
 
 
-function foo(int $x, int $y) {
+declare(strict_types=1);
+
+function foo(int|float $x, int|float $y) {
     return $x * $y;
 }
 
-$result = foo(5, 10);
+$result = foo(5, 10.8);
 
-echo $result;
+echo $result; //54 ???
+
+
