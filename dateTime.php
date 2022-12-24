@@ -27,3 +27,5 @@ echo 'manually create one using strtotime(): ' . date('m/d/Y g:ia', strtotime('2
 echo 'strtotime(\'tomorrow\'): ' . date('m/d/Y g:ia', strtotime('tomorrow'))  . '<br>';
 echo 'strtotime(\'yesterday\'): ' . date('m/d/Y g:ia', strtotime('yesterday'))  . '<br>';
 echo 'strtotime(\'first day of february\'): ' . date('m/d/Y g:ia', strtotime('first day of february'))  . '<br>';
+echo 'strtotime(\'last day of february 2022\'): ' . date('m/d/Y g:ia', strtotime('last day of february 2022'))  . '<br>';
+echo 'strtotime(\'second friday of december\'): ' . date('m/d/Y g:ia', strtotime('second friday of december'))  . '<br>';
